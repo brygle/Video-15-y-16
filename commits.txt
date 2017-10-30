@@ -1,0 +1,12 @@
+commit 73b265bb3ae62897457f39082d2e8f4079511058
+Author: Bryan Lopez <bryansyng2@gmail.com>
+Date:   Mon Oct 30 15:36:29 2017 -0600
+
+    agregue el parrafo
+
+
+commit 1edb8cc3353c54c5965228b061e6ab381132875a
+Author: Bryan Lopez <bryansyng2@gmail.com>
+Date:   Mon Oct 30 15:31:46 2017 -0600
+
+    Iniciamos

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document Object Model</title>
+</head>
+<body>
+   <ol id="lista">
+       <li>Lorem ipsum solor sit amet.</li>
+       <li id="segundo">Asperiores ad, quam unde, Fuga.</li>
+   </ol>
+   <script>
+       var elemento = document.createElement("li");
+       var contenido = document.createTextNode("Nuevo Texto");
+       elemento.appendChild(contenido);
+       
+       //.parentNode indica quien es el padre del elemento li con indice 0
+       //var padre = document.getElementsByTagName("li")[0].parentNode;
+       
+       //AQUI AGREGA EL ELEMENTO COMO EL ULTIMO ELEMENTO DE PADRE
+       //padre.appendChild(elemento); 
+       
+       //var primerElemento = document.getElementsByTagName("li")[0]; 
+       
+       //AQUI INSERTA EL ELEMENTO ANTEDS DEL SEGUNDO PARAMETRO       //padre.insertBefore(elemento, primerElemento);
+       
+       var primerElemento = document.getElementsByTagName("li")[0];
+       //primerElemento.textContent = "Nuevo Texto <b>inner ejecuta etiquetas textContent solo texto plano</b>";
+       primerElemento.innerHTML = "Nuevo Texto <b>inner ejecuta etiquetas textContent solo texto plano</b>";
+       
+       var padre = document.getElementsByTagName("li")[0].parentNode;
+       padre.replaceChild(elemento, primerElemento);
+       padre.removeChild(document.getElementById("segundo"));
+    </script>
+    
+</body>
+</html>
